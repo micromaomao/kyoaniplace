@@ -12,7 +12,7 @@ if (window.top !== window.self) {
     window.addEventListener('load', () => {
         // Load the image
         const image = document.createElement("img");
-        image.src = "https://raw.githubusercontent.com/micromaomao/kyoaniplace/main/!dotted_a.png";
+        image.src = "https://raw.githubusercontent.com/micromaomao/kyoaniplace/main/!dotted_a.png?decache=" + Math.random();
         image.onload = () => {
             image.style = `position: absolute; left: 0; top: 0; width: ${image.width/3}px; height: ${image.height/3}px; image-rendering: crisp-edges; z-index: 1`;
         };
